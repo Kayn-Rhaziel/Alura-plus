@@ -19,10 +19,13 @@ body {
     padding: 0;
 }
 
-.principal{
+.principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
+    
 }
 
 .container{
@@ -31,9 +34,19 @@ body {
     grid-template-columns: 50% 50%;
 }
 
+.container__caixa {
+    margin-left: 3.38em;
+    
+}
+
 .container__titulo {
     font-size: 1.75em;
     font-weight: 700;
+    margin-bottom: 1.38em 
+}
+
+.container__imagem {
+    margin-bottom: 3.38em;
 }
 
 .container__botao {
@@ -42,15 +55,47 @@ body {
     padding: 1em;
     color: var(--branco-principal);
     display: block;
-    text-decoration: none;    
+    text-decoration: none;
+    margin-bottom: 1em;
+        
 }
 
-.botao__secundario{
+.botao__secundario {
     background-color: transparent;
-    border: 2px solid var(--branco-principal);        
+    border: 2px solid var(--branco-principal);
+    margin-bottom: 0.63em;        
 }
 
 .container__aviso {
     font-size: 0.75em;
     color: var(--cinza-secundario);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10.31em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.container__descricao{
+    padding: 3em;
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
 }
